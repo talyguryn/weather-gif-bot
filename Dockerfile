@@ -8,9 +8,9 @@ ENV TZ=Europe/Moscow
 
 WORKDIR /usr/src/app
 
-COPY package.json yarn.lock ./
-RUN yarn install --production --frozen-lockfile
+COPY package.json package-lock.json ./
+RUN npm ci --quiet
 
 COPY . .
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
