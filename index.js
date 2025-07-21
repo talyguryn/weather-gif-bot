@@ -53,27 +53,27 @@ const cron = require("node-cron");
 (async () => {
   botInfo = await bot.getMe();
 
-  for (const [name, code] of Object.entries(PLACES)) {
-    try {
-      await createThundersGif(code);
-      await createSatelliteGif(code);
-      await createCloudsGif(code);
-    } catch (error) {
-      console.error(`Error processing ${name}:`, error);
-    }
-  }
+  // for (const [name, code] of Object.entries(PLACES)) {
+  //   try {
+  //     await createThundersGif(code);
+  //     await createSatelliteGif(code);
+  //     await createCloudsGif(code);
+  //   } catch (error) {
+  //     console.error(`Error processing ${name}:`, error);
+  //   }
+  // }
 
-  cron.schedule("*/15 * * * *", async () => {
-    for (const [name, code] of Object.entries(PLACES)) {
-      try {
-        await createThundersGif(code);
-        await createSatelliteGif(code);
-        await createCloudsGif(code);
-      } catch (error) {
-        console.error(`Error processing ${name}:`, error);
-      }
-    }
-  });
+  // cron.schedule("*/15 * * * *", async () => {
+  //   for (const [name, code] of Object.entries(PLACES)) {
+  //     try {
+  //       await createThundersGif(code);
+  //       await createSatelliteGif(code);
+  //       await createCloudsGif(code);
+  //     } catch (error) {
+  //       console.error(`Error processing ${name}:`, error);
+  //     }
+  //   }
+  // });
 })();
 
 /**
