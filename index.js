@@ -506,7 +506,7 @@ bot.onText(/^\/clouds_sat(.*)(@\w+)?$/, async (msg, match) => {
     );
 
     if (!fs.existsSync(gifPath)) {
-      const message = `Gif is not ready. Try again in 15 minutes.`;
+      const message = `Видео с погодой временно выключены. Как только они снова заработают, в канале проекта будет сообщение с уведомлением об этом.\n\nПодписывайтесь, чтобы не пропустить: https://t.me/solar_activity_alerts`;
 
       bot.sendChatAction(chatId, "typing");
       bot.sendMessage(chatId, message, options);
@@ -809,6 +809,13 @@ const dataSources = [
   /**
    * Russia
    */
+  {
+    name: "Rif",
+    country: "Russia",
+    lat: 60,
+    regexp: /(((R|r)if)|((Р|р)иф))/,
+    data: ["https://pics.starvisor.net/galleries/orig/cap_rif.jpg"],
+  },
   {
     name: "Nizino",
     country: "Russia",
