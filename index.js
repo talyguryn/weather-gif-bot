@@ -813,7 +813,7 @@ const dataSources = [
     name: "Rif",
     country: "Russia",
     lat: 60,
-    regexp: /(((R|r)if)|((Р|р)иф))/,
+    regexp: /(((R|r)if)|(фортриф))/,
     data: ["https://pics.starvisor.net/galleries/orig/cap_rif.jpg"],
   },
   {
