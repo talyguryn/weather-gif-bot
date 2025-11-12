@@ -506,6 +506,7 @@ bot.onText(/^\/clouds_sat(.*)(@\w+)?$/, async (msg, match) => {
     );
 
     if (!fs.existsSync(gifPath)) {
+      // const message = `Gif is not ready. Try again in 15 minutes.`;
       const message = `Видео с погодой временно выключены. Как только они снова заработают, в канале проекта будет сообщение с уведомлением об этом.\n\nПодписывайтесь, чтобы не пропустить: https://t.me/solar_activity_alerts`;
 
       bot.sendChatAction(chatId, "typing");
@@ -571,7 +572,8 @@ bot.onText(/^\/clouds_pre(.*)(@\w+)?$/, async (msg, match) => {
     );
 
     if (!fs.existsSync(gifPath)) {
-      const message = `Gif is not ready. Try again in 15 minutes.`;
+      // const message = `Gif is not ready. Try again in 15 minutes.`;
+      const message = `Видео с погодой временно выключены. Как только они снова заработают, в канале проекта будет сообщение с уведомлением об этом.\n\nПодписывайтесь, чтобы не пропустить: https://t.me/solar_activity_alerts`;
 
       bot.sendChatAction(chatId, "typing");
       bot.sendMessage(chatId, message, options);
@@ -636,7 +638,8 @@ bot.onText(/^\/clouds_thunder(.*)(@\w+)?$/, async (msg, match) => {
     );
 
     if (!fs.existsSync(gifPath)) {
-      const message = `Gif is not ready. Try again in 15 minutes.`;
+      // const message = `Gif is not ready. Try again in 15 minutes.`;
+      const message = `Видео с погодой временно выключены. Как только они снова заработают, в канале проекта будет сообщение с уведомлением об этом.\n\nПодписывайтесь, чтобы не пропустить: https://t.me/solar_activity_alerts`;
 
       bot.sendChatAction(chatId, "typing");
       bot.sendMessage(chatId, message, options);
