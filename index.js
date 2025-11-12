@@ -801,8 +801,8 @@ const dataSources = [
     regexp: /((P|p)orjus)|((П|п)ор((д?)жу|ью)с)/,
     data: [
       "https://uk.jokkmokk.jp/photo/nr4/latest.jpg",
-      "https://uk.jokkmokk.jp/photo/nr3/latest.jpg",
-      "https://uk.jokkmokk.jp/photo/nr5/latest.jpg",
+      // "https://uk.jokkmokk.jp/photo/nr3/latest.jpg",
+      // "https://uk.jokkmokk.jp/photo/nr5/latest.jpg",
     ],
   },
 
